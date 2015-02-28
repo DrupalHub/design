@@ -51,6 +51,10 @@
     width: 192px;
     border: solid 1px $image-orange;
   }
+
+  &.comments {
+    border: solid 1px $comment-image-border;
+  }
 }
 
 a {

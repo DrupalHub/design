@@ -6,14 +6,18 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- build:css({app,.tmp}) css/main.css -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  {% for css in page.css %}
+  <link rel="stylesheet" type="text/css" href="css/{{ css }}.css">
+  {% endfor %}
   <script src="js/main.js"></script>
 </head>
 <body>
 
 {% include header.html %}
-
 {{ content }}
+{% include footer.html %}
 
 </body>
 </html>

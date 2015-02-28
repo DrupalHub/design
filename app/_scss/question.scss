@@ -1,0 +1,33 @@
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import 'bootstrap';
+@import 'variables';
+@import 'general';
+
+
+.images {
+
+  &.question {
+    width: auto;
+  }
+}
+
+.question-content {
+
+  h2 {
+    margin-top: 0px;
+  }
+}
+
+.comments {
+
+  .page-header {
+    border-bottom-color: $comments-header;
+  }
+
+  .comment {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: $comments-header solid 1px;
+  }
+}
