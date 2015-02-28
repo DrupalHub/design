@@ -1,0 +1,55 @@
+@mixin input-placeholder($color) {
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+.meta-info {
+
+  .fa {
+    margin-left: 5px;
+  }
+
+  .first {
+    margin: 0;
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+.images {
+
+  &.question {
+    width: 120px;
+    border: solid 1px $image-blue;
+  }
+}
+
+a {
+  color: #000;
+
+  &:hover {
+    color: $link-blue;
+  }
+}

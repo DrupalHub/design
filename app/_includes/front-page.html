@@ -6,19 +6,27 @@
   <div class="row">
     <div class="col-md-8">
 
-      <div class="panel panel-default">
-        <div class="panel-heading">Question</div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
+      <div class="page-header questions-header"><h4>Questions</h4></div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">Blogs</div>
-        <div class="panel-body">
-          Panel content
+      {% for item in site.data.questions %}
+        <div class="questions-wrapper clearfix">
+          <div class="question">
+            <img src="{{ item.image }}" class="images question" />
+            <div class="content">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+              <div class="meta-info">
+                <span class="first fa fa-clock-o"></span> {{ item.date }}
+                <span class="fa fa-user"></span> {{ item.user }}
+                <span class="fa fa-eye"></span> {{ item.viewed }}
+                <span class="fa fa-thumbs-o-up"></span> {{ item.like }}
+              </div>
+              <div class="text">
+                {{ item.text }}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
     <div class="col-md-4">
 
@@ -60,6 +68,16 @@
 
 <section class="bottom container">
   <div class="row">
+    <div class="col-md-12">
+      <div class="page-header blog-header"><h4>Blogs</h4></div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">Blogs</div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </div>
     <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading">Companies</div>

@@ -1,0 +1,28 @@
+.questions-header {
+  border-bottom-color: $question-border;
+}
+
+.questions-wrapper {
+  padding-bottom: 10px;
+
+  .question {
+
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .content {
+
+      a {
+        font-size: 17px;
+      }
+    }
+
+  }
+}
+
+
+.blog-header {
+  border-bottom-color: $blogs-border;
+}
