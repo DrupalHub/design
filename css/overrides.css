@@ -1,0 +1,15 @@
+.navbar {
+  border-color: #9de2ff;
+}
+
+#search {
+  width: 250px;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.secondary-menu {
+  float: right;
+}
