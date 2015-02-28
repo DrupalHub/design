@@ -6,16 +6,28 @@
 @import 'front';
 
 body {
-  padding-top: 70px;
+  padding-top: 80px;
 
-  .navbar {
+  .navbar-fixed-top {
     border-color: $light-blue;
     border-right: none;
+
+    #search {
+      width: 250px;
+      color: #45A4CC;
+    }
+
+    img {
+      width: 45px;
+    }
+
+    .navbar-brand {
+      float: right;
+    }
   }
 
-  #search {
-    width: 250px;
-    color: #45A4CC;
+  .page-header {
+    margin-top: 15px;
   }
 
   .secondary-menu {
