@@ -1,0 +1,136 @@
+- hour: "08:30"
+  title: "התכנסות כיבוד קל ושתיה"
+
+- hour: "09:00"
+  data:
+    - title:
+        he: "פתיחה"
+        en: "Opening"
+      name:
+        he: "רועי סגל"
+        en: "Roy Segall"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#3"
+      #description: " הודעה זו תשמיד את עצמה בעוד 10 דקות ביחד עם המחשב שלך - ראה הוזהרת!!!! מלל ארוך לצורך הדגמה בלבדת יכול להיות שיעלם בסוף... רועי זוהי הודעה סמויה."
+      image: roy.jpg
+
+- hour: "09:30"
+  data:
+    - title:
+        he: "הרצאה ראשית"
+        en: "Keynote"
+      name:
+        he: "בני דאון"
+        en: "Benny Daon"
+      definition:
+        he: "ומייסד חברת Zend ממפתחי שפת PHP"
+        en: "CTO & Co-founder of Zend, Co-Architect of PHP"
+      #description: " הודעה זו תשמיד את עצמה בעוד 10 דקות ביחד עם המחשב שלך - ראה הוזהרת!!!! מלל ארוך לצורך הדגמה בלבדת יכול להיות שיעלם בסוף... רועי זוהי הודעה סמויה."
+      url: "/#3"
+      image: benny.png
+
+- hour: "10:30"
+  data:
+  - title:
+      he: "MEAN.io"
+      en: "MEAN.io"
+    name:
+      he: "ליאור קיסוס"
+      en: "Lior Kesos"
+    definition:
+      he: "מומחה דרופל"
+      en: "Drupal expert"
+    url: "/#3"
+    image: lior.png
+
+- hour: "11:15"
+  data:
+    - title:
+        he: "Restful & Zariz"
+        en: "Restful & Zariz"
+      name:
+          he: "אמתי בורשטיין"
+          en: "Amitai Burstein"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#3"
+      image: amitai.jpeg
+
+- hour: "12:00"
+  title: "ארוחת צהריים"
+
+- hour: "13:00"
+  data:
+    - title:
+        he: "דרופל 8"
+        en: "Drupal 8"
+      name:
+        he: "רועי סגל"
+        en: "Roy Segall"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#5"
+      image: roy.jpg
+
+- hour: "13:45"
+  data:
+    - title:
+        he: "אבטחה בדרופל"
+        en: "Drupal Security"
+      name:
+        he: "רן בר-זיק"
+        en: "Ran bar-zik"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#7"
+      image: ran.jpg
+
+- hour: "14:30"
+  data:
+    - title:
+        he: "Theming בדרופל 7 ו-8"
+        en: "Drupal 7-8 theming"
+      name:
+        he: "ישראל שמואלי"
+        en: "Israel Shmuali"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#8"
+      image: israel.jpg
+
+- hour: "15:15"
+  title: "הפסקה"
+
+- hour: "15:30"
+  data:
+    - title:
+        he: "מבוא לדרופל"
+        en: "Introduction to Drupal"
+      name:
+        he: "רועי קרן"
+        en: "Roy Keren"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#9"
+      image: royK.jpg
+
+- hour: "17:00"
+  data:
+    - title:
+        he: "סגירה"
+        en: "Closing"
+      name:
+        he: "רועי סגל"
+        en: "Roy Segall"
+      definition:
+        he: "מומחה דרופל"
+        en: "Drupal expert"
+      url: "/#5"
+      image: roy.jpg
