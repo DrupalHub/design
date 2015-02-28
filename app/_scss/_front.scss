@@ -22,7 +22,22 @@
   }
 }
 
-
 .blog-header {
   border-bottom-color: $blogs-border;
+}
+
+.events-header {
+  border-bottom-color: $events-border;
+}
+
+.video-header {
+  border-bottom-color: $video-border;
+}
+
+.users-header {
+  border-bottom-color: $users-border;
+}
+
+.second {
+  padding-top: 7px;
 }
