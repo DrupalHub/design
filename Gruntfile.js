@@ -378,7 +378,7 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
-    //'concat',
+    'concat',
     'autoprefixer:dist',
     'cssmin',
     //'uglify',

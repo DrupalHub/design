@@ -6,7 +6,10 @@
   <div class="row">
     <div class="col-md-8 first">
 
-      <div class="page-header questions-header"><h3>Questions</h3></div>
+      <div class="page-header questions-header clearfix">
+        <h3><a href="questions.html">Questions</a></h3>
+        <a href="#" class="btn btn-primary btn-md">Ask a question</a>
+      </div>
 
       {% for item in site.data.questions %}
         <div class="questions-wrapper clearfix">
@@ -30,36 +33,52 @@
     </div>
     <div class="col-md-4 second">
 
-      <div>
-        <div class="page-header events-header"><h4>Events</h4></div>
+      <div class="events">
+        <div class="page-header events-header"><h4 class="fa fa-calendar-o"> Events</h4></div>
 
         <ul>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
+          {% for item in site.data.events %}
+          <li>
+            <b><a href="{{ item.url }}">{{ item.title }}</a></b> - {{ item.description }}<br />
+            {{ item.date }}, {{ item.location }}.
+          </li>
+          {% endfor %}
         </ul>
       </div>
 
-      <div>
-        <div class="page-header video-header"><h4>Last videos</h4></div>
+      <div class="videos">
+        <div class="page-header video-header"><h4 class="fa fa-play"> Last videos</h4></div>
 
         <ul>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
+          {% for item in site.data.videos %}
+          <li>
+            <b><a href="{{ item.url }}">{{ item.title }}</a></b> - {{ item.description }}
+            <div class="meta-info">
+              <span class="first fa fa-user"></span> {{ item.user }}
+              <span class="fa fa-eye"></span> {{ item.viewed }}
+              <span class="fa fa-thumbs-o-up"></span> {{ item.like }}
+            </div>
+          </li>
+          {% endfor %}
         </ul>
       </div>
 
-      <div>
-        <div class="page-header users-header"><h4>Online users</h4></div>
+      <div class="users">
+        <div class="page-header users-header"><h4 class="fa fa-users"> Most active users</h4></div>
 
         <ul>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
-          <li>asdassad</li>
+          {% for item in site.data.active_users %}
+          <li class="clearfix">
+            <img src="{{ item.img }}" />
+            <div>
+              <b><a href="{{ item.url }}">{{ item.name }}</a></b>
+              <div class="meta-info">
+                <span class="fa fa-thumbs-o-up"></span> {{ item.reputation }}
+                <span class="fa fa-eye"></span> {{ item.viewed }}
+              </div>
+            </div>
+          </li>
+          {% endfor %}
         </ul>
       </div>
 
@@ -70,22 +89,30 @@
 <section class="bottom container">
   <div class="row">
     <div class="col-md-12">
-      <div class="page-header blog-header"><h3>Blogs</h3></div>
+      <div class="page-header blog-header clearfix">
+        <h3>Blogs</h3>
+        <a href="#" class="btn btn-warning btn-md">Create a blog post</a>
+      </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">Blogs</div>
-        <div class="panel-body">
-          Panel content
+      {% for item in site.data.blogs %}
+      <div class="blogs-wrapper clearfix">
+        <div class="blog">
+          <img src="{{ item.image }}" class="images blog" />
+          <div class="content">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            <div class="meta-info">
+              <span class="first fa fa-clock-o"></span> {{ item.date }}
+              <span class="fa fa-user"></span> {{ item.user }}
+              <span class="fa fa-eye"></span> {{ item.viewed }}
+              <span class="fa fa-thumbs-o-up"></span> {{ item.like }}
+            </div>
+            <div class="text">
+              {{ item.intro }}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-heading">Companies</div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

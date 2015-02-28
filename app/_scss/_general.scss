@@ -3,9 +3,11 @@
   &::-moz-placeholder {
     color: $color;
   }
+
   &:-ms-input-placeholder {
     color: $color;
   }
+
   &::-webkit-input-placeholder {
     color: $color;
   }
@@ -44,6 +46,11 @@
     width: 120px;
     border: solid 1px $image-blue;
   }
+
+  &.blog {
+    width: 192px;
+    border: solid 1px $image-orange;
+  }
 }
 
 a {
@@ -52,4 +59,9 @@ a {
   &:hover {
     color: $link-blue;
   }
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
