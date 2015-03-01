@@ -20,8 +20,12 @@
   }
 
   .first {
-    margin: 0;
+    margin-left: 0px;
   }
+}
+
+.fa:before {
+  margin-right: 5px;
 }
 
 .clearfix:after {
