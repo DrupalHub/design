@@ -13,22 +13,26 @@
 
       {% for item in site.data.questions %}
         <div class="questions-wrapper clearfix">
-          <div class="question">
-            <img src="{{ item.image }}" class="images question" />
-            <div class="content">
-              <a href="{{ item.url }}">{{ item.title }}</a>
-              <div class="meta-info">
-                <span class="first fa fa-clock-o"></span> {{ item.date }}
-                <span class="fa fa-user"></span> {{ item.user }}
-                <span class="fa fa-eye"></span> {{ item.viewed }}
-                <span class="fa fa-thumbs-o-up"></span> {{ item.like }}
+          <div class="question row">
+            <div class="col-md-2">
+              <img src="{{ item.image }}" class="images img-responsive question" />
+            </div>
+            <div class="col-md-10">
+              <div class="content">
+                <a href="{{ item.url }}">{{ item.title }}</a>
+                <div class="meta-info">
+                  <span class="first fa fa-clock-o"></span> {{ item.date }}
+                  <span class="fa fa-user"></span> {{ item.user }}
+                  <span class="fa fa-eye"></span> {{ item.viewed }}
+                  <span class="fa fa-thumbs-o-up"></span> {{ item.like }}
 
-                {% for tag in item.tags %}
-                  <span class="label label-info"><a href="{{ tag.url }}">{{ tag.title }}</a></span>
-                {% endfor %}
-              </div>
-              <div class="text">
-                {{ item.text }}
+                  {% for tag in item.tags %}
+                    <span class="label label-info"><a href="{{ tag.url }}">{{ tag.title }}</a></span>
+                  {% endfor %}
+                </div>
+                <div class="text">
+                  {{ item.text }}
+                </div>
               </div>
             </div>
           </div>
