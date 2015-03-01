@@ -3,7 +3,7 @@
   user: Clark Kent
   viewed: 20
   like: 6
-  url: "/question.html#nid-1"
+  url: "question.html#nid-1"
   image: img/ClarkKent.jpg
   tags:
     - title: Entity API
@@ -24,7 +24,7 @@
   tags:
     - title: Views
       url: terms.html#tid-1
-  url: "/question.html#nid-2"
+  url: "question.html#nid-2"
   image: img/wolverine.jpeg
   text: "
     What so could in views? why use it? Where is sit with the decoupled idea?
@@ -40,7 +40,7 @@
       url: terms.html#tid-20
     - title: Node
       url: terms.html#tid-10
-  url: "/question.html#nid-1"
+  url: "question.html#nid-1"
   image: img/BruceWayne.jpg
   text: "
     I'm trying to create migration during install and i don't know how can i
@@ -53,7 +53,7 @@
   user: Logan
   viewed: 350
   like: 200
-  url: "/question.html#nid-2"
+  url: "question.html#nid-2"
   image: img/NickFury.jpg
   tags:
     - title: Views
@@ -67,7 +67,7 @@
   user: Clark Kent
   viewed: 20
   like: 6
-  url: "/question.html#nid-1"
+  url: "question.html#nid-1"
   image: img/PeterParker.jpg
   tags:
     - title: Entity API
@@ -85,7 +85,7 @@
   user: Clark Kent
   viewed: 20
   like: 6
-  url: "/question.html#nid-1"
+  url: "question.html#nid-1"
   image: img/TonyStark.jpg
   tags:
     - title: Entity API
@@ -103,7 +103,7 @@
   user: Clark Kent
   viewed: 20
   like: 6
-  url: "/question.html#nid-1"
+  url: "question.html#nid-1"
   image: img/ScottSummers.jpg
   tags:
     - title: Entity API
