@@ -7,10 +7,10 @@
 
   <section class="question">
     <div class="row">
-      <div class="col-md-3 pull-left image">
+      <div class="col-md-3 col-sm-3 pull-left image">
         <img class="images question img-responsive" src="{{ site.data.question.image }}" />
       </div>
-      <div class="col-md-9 question-content">
+      <div class="col-md-9 col-sm-9 question-content">
         <h2>{{ site.data.question.title }}</h2>
         <div class="meta-info">
           <span class="first fa fa-clock-o"></span> {{ site.data.question.date }}
@@ -37,8 +37,8 @@
       {% for comment in site.data.comments %}
       <li  class="comment">
         <div class="row">
-          <div class="col-md-3"><img class="images comments img-responsive" src="{{ comment.image }}" /></div>
-          <div class="col-md-9">
+          <div class="col-md-3 col-sm-3"><img class="images comments img-responsive" src="{{ comment.image }}" /></div>
+          <div class="col-md-9 col-sm-9">
             <div class="meta-info">
               <span class="first fa fa-clock-o"></span> {{ comment.date }}
               <span class="fa fa-user"></span> {{ comment.user }}
