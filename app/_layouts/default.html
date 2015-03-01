@@ -7,10 +7,11 @@
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- build:css({app,.tmp}) css/main.css -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   {% for css in page.css %}
   <link rel="stylesheet" type="text/css" href="css/{{ css }}.css">
   {% endfor %}
+  <!-- endbuild -->
   <script src="js/main.js"></script>
 </head>
 <body>
