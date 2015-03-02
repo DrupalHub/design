@@ -1,27 +1,33 @@
 .page-videos {
 
-  .videos-header {
+  .videos-header,
+  .playlist-header {
     border-bottom-color: $videos-header;
   }
 
-  .video-wrapper {
-    position: relative;
+  .videos {
     margin-bottom: 10px;
 
-    .image {
-      border: solid 1px $video-border;
-    }
+    .video-wrapper {
+      position: relative;
+      margin-bottom: 10px;
 
-    .meta {
-      position: absolute;
-      bottom: 0px;
-      color: white;
-      background: black;
-      opacity: 0.8;
-      width: 100%;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 5px;
+      .meta-info {
+        position: absolute;
+        border-top: solid 1px $video-border;
+        bottom: 0px;
+        color: white;
+        background: black;
+        opacity: 0.8;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+      }
     }
+  }
+
+  .playlist-header {
+    margin-top: 40px;
   }
 }

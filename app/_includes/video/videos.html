@@ -4,18 +4,38 @@
     <li class="active">Videos</li>
   </ul>
 
-  <div class="page-header videos-header clearfix"><h3>Videos</h3></div>
+  <div class="page-header videos-header clearfix">
+    <h3 class="pull-left">Videos</h3>
+    <form class="navbar-form navbar-left pull-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" id="video-search" placeholder="Search">
+      </div>
+    </form>
+  </div>
 
-  <section class="videos">
+  <section class="videos clearfix">
     {% for video in site.data.videos %}
       <div class="col-md-3">
         <div class="video-wrapper">
           {{ video.title | truncatewords: 5 }}
           <img class="img-responsive image" src="{{ video.image }}" />
-          <div class="meta">asdasasd</div>
+            <div class="meta-info">
+              <span class="first fa fa-clock-o"></span>{{ video.date }}
+              <span class="fa fa-eye"></span>{{ video.viewed }}
+              <span class="fa fa-thumbs-o-up"></span>{{ video.like }}
+          </div>
         </div>
       </div>
     {% endfor %}
   </section>
+
+  <div class="page-header playlist-header clearfix">
+    <h3 class="pull-left">Playlists</h3>
+    <form class="navbar-form navbar-left pull-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" id="playlist-search" placeholder="Search">
+      </div>
+    </form>
+  </div>
 
 </section>
