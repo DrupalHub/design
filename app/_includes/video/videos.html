@@ -1,0 +1,21 @@
+<section class="container page-videos">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li class="active">Videos</li>
+  </ul>
+
+  <div class="page-header videos-header clearfix"><h3>Videos</h3></div>
+
+  <section class="videos">
+    {% for video in site.data.videos %}
+      <div class="col-md-3">
+        <div class="video-wrapper">
+          {{ video.title | truncatewords: 5 }}
+          <img class="img-responsive image" src="{{ video.image }}" />
+          <div class="meta">asdasasd</div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+</section>

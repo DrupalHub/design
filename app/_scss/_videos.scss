@@ -1,0 +1,27 @@
+.page-videos {
+
+  .videos-header {
+    border-bottom-color: $videos-header;
+  }
+
+  .video-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+
+    .image {
+      border: solid 1px $video-border;
+    }
+
+    .meta {
+      position: absolute;
+      bottom: 0px;
+      color: white;
+      background: black;
+      opacity: 0.8;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+    }
+  }
+}

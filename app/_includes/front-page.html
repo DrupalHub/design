@@ -81,7 +81,7 @@
         <div class="page-header video-header"><h4 class="fa fa-play">Last videos</h4></div>
 
         <ul>
-          {% for item in site.data.videos %}
+          {% for item in site.data.videos limit:3 %}
           <li>
             <b><a href="{{ item.url }}">{{ item.title }}</a></b>- {{ item.description }}
             <div class="meta-info">
