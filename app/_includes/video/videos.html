@@ -14,19 +14,21 @@
   </div>
 
   <section class="videos clearfix">
-    {% for video in site.data.videos %}
-      <div class="col-md-3">
-        <div class="video-wrapper">
-          {{ video.title | truncatewords: 5 }}
-          <img class="img-responsive image" src="{{ video.image }}" />
-            <div class="meta-info">
-              <span class="first fa fa-clock-o"></span>{{ video.date }}
-              <span class="fa fa-eye"></span>{{ video.viewed }}
-              <span class="fa fa-thumbs-o-up"></span>{{ video.like }}
+    <div class="row">
+      {% for video in site.data.videos %}
+        <div class="col-md-3">
+          <div class="video-wrapper">
+            {{ video.title | truncatewords: 5 }}
+            <img class="img-responsive image" src="{{ video.image }}" />
+              <div class="meta-info">
+                <span class="first fa fa-clock-o"></span>{{ video.duration }}
+                <span class="fa fa-eye"></span>{{ video.viewed }}
+                <span class="fa fa-thumbs-o-up"></span>{{ video.like }}
+            </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </section>
 
   <div class="page-header playlist-header clearfix">
@@ -37,5 +39,22 @@
       </div>
     </form>
   </div>
+
+  <section class="playlist clearfix">
+    <div class="row">
+      {% for playlist in site.data.playlists %}
+        <div class="col-md-3 playlist-wrapper">
+          <img class="img-responsive image" src="{{ playlist.image }}" />
+          <div class="meta-info">
+            {{ playlist.title }} - {{ playlist.description }}
+            <div class="meta-info">
+              <span class="fa fa-clock-o"></span> Duration: {{ playlist.time }}
+              <span class="fa fa-file-o"></span> Videos: {{ playlist.videos }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
 
 </section>
