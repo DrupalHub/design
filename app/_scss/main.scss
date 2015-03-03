@@ -17,6 +17,21 @@ body {
     border-color: $light-blue;
     border-right: none;
 
+    .navbar-nav.inner-pages {
+
+      .videos a {
+        @include hover(red);
+      }
+
+      .documentation a {
+        @include hover(#0075B2);
+      }
+
+      .calendar a {
+        @include hover(#009102);
+      }
+    }
+
     #search {
       width: 250px;
       color: #45A4CC;
@@ -45,50 +60,35 @@ body {
         &.youtube {
 
           a {
-
-            &:hover {
-              color: red;
-            }
+            @include hover(red);
           }
         }
 
         &.twitter {
 
           a {
-
-            &:hover {
-              color: #158CBA;
-            }
+            @include hover(#158CBA);
           }
         }
 
         &.gplus {
 
           a {
-
-            &:hover {
-              color: #ee4e10;
-            }
+            @include hover(#ee4e10);
           }
         }
 
         &.facebook {
 
           a {
-
-            &:hover {
-              color: #4f62ae;
-            }
+            @include hover(#4f62ae);
           }
         }
 
         &.github {
 
           a {
-
-            &:hover {
-              color: #333;
-            }
+            @include hover(#333);
           }
         }
       }
