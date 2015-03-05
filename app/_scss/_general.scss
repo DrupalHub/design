@@ -44,10 +44,12 @@
   clear: both;
   visibility: hidden;
 }
+
 /* IE6 */
 * html .clearfix {
   height: 1%;
 }
+
 /* IE7 */
 *:first-child + html .clearfix {
   min-height: 1%;
@@ -87,4 +89,8 @@ span.label {
     color: white;
     font-size: 11px !important;
   }
+}
+
+form legend {
+  padding-bottom: 15px;
 }

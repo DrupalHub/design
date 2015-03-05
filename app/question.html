@@ -40,48 +40,19 @@ css:
       <h2>Comments</h2>
     </div>
 
-    <ul>
-      {% for comment in site.data.comments %}
-      <li  class="comment">
-        <div class="row">
-          <div class="col-md-3 col-sm-3"><img class="images comments img-responsive" src="{{ comment.image }}" /></div>
-          <div class="col-md-9 col-sm-9">
-            <div class="meta-info">
-              <span class="first fa fa-clock-o"></span>{{ comment.date }}
-              <span class="fa fa-user"></span>{{ comment.user }}
-              <span class="fa fa-thumbs-o-up"></span>{{ comment.point }}
-            </div>
-
-            {{ comment.text }}
-          </div>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <ul class="pagination clearfix">
-      <li class="disabled"><a href="#">«</a></li>
-      <li class="active"><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">»</a></li>
-    </ul>
+    {% include comments.html %}
   </section>
 
   <section class="form">
     <form class="form-horizontal">
       <fieldset>
-        <legend>Help this question</legend>
+        <legend>
+          Help this question
+          <button type="submit" class="btn btn-primary pull-right">Submit</button>
+        </legend>
         <div class="form-group">
           <div class="col-lg-12">
             <textarea class="form-control" rows="3" id="textArea"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-12">
-            <button type="submit" class="btn btn-primary pull-right">Submit</button>
           </div>
         </div>
       </fieldset>
