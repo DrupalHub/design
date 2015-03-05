@@ -25,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="playlist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/playlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25757575" vertical-offset="119" max-vertical-offset="1666">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="1632">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44360268" vertical-offset="0" max-vertical-offset="1377">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -119,13 +129,13 @@
         <option value="$PROJECT_DIR$/app/_scss/_general.scss" />
         <option value="$PROJECT_DIR$/app/question.html" />
         <option value="$PROJECT_DIR$/app/_data/other_videos.yml" />
-        <option value="$PROJECT_DIR$/app/video.html" />
         <option value="$PROJECT_DIR$/app/videos.html" />
         <option value="$PROJECT_DIR$/app/_data/playlists.yml" />
         <option value="$PROJECT_DIR$/app/_scss/main.scss" />
         <option value="$PROJECT_DIR$/app/_scss/_video.scss" />
         <option value="$PROJECT_DIR$/app/_scss/_playlist.scss" />
         <option value="$PROJECT_DIR$/app/playlist.html" />
+        <option value="$PROJECT_DIR$/app/video.html" />
       </list>
     </option>
   </component>
@@ -864,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1018518" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="77" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="77" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/_scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41921768" vertical-offset="0" max-vertical-offset="1768">
@@ -898,8 +900,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/playlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25757575" vertical-offset="119" max-vertical-offset="1666">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="1632">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44360268" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
       </provider>
