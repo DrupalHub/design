@@ -2,6 +2,13 @@
 
   .documentation-header {
     border-bottom-color: $documentation-header;
+  }
 
+  .documentation-list {
+
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
