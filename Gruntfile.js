@@ -273,9 +273,9 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
+            '_bower_components/**'
             //'favicon.ico',
             //'apple-touch*.png'
           ],
@@ -395,18 +395,14 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'bower_install',
     'clean',
-    // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
     'cssmin',
-    //'uglify',
-    //'imagemin',
-    //'svgmin',
-    // 'filerev',
     'usemin',
     'htmlmin'
     ]);
