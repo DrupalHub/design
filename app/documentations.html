@@ -3,7 +3,7 @@ layout: default
 title: DrupalHub
 ---
 
-<section class="container page-documentation">
+<section class="container page-documentations">
 
   <ul class="breadcrumb">
     <li><a href="index.html">Home</a></li>
@@ -15,7 +15,7 @@ title: DrupalHub
   </div>
 
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 tags">
       {% for tag in site.data.documentation_tags %}
         <span class="label label-info"><a href="{{ tag.url }}">{{ tag.title }}</a></span>
       {% endfor %}

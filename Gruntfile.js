@@ -21,6 +21,10 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
+      bower: {
+        files: ['bower.json'],
+        tasks: ['wiredep']
+      },
       compass: {
         files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
         tasks: ['compass:server', 'autoprefixer:server']
@@ -38,7 +42,17 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          livereload: '<%= connect.options.livereload %>'
+          livereload: '<%= connect.options.livereload %>',
+          middleware: function (connect) {
+            return [
+              connect.static('.tmp'),
+              connect().use(
+                '/bower_components',
+                connect.static('./bower_components')
+              ),
+              connect.static(appConfig.app)
+            ];
+          }
         },
         files: [
           '.jekyll/**/*.html',
@@ -111,6 +125,7 @@ module.exports = function (grunt) {
         cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/js',
+        importPath: '<%= yeoman.app %>/_bower_components',
         relativeAssets: false,
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
@@ -350,6 +365,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+      'bower_install',
       'clean:server',
       'concurrent:server',
       'autoprefixer:server',
