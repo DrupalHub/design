@@ -36,7 +36,7 @@ module.exports = function (grunt) {
       jekyll: {
         files: [
           '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-          '!<%= yeoman.app %>/_bower_components/**/*'
+          '!<%= yeoman.app %>/bower_components/**/*'
         ],
         tasks: ['jekyll:server']
       },
@@ -125,12 +125,12 @@ module.exports = function (grunt) {
         cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/js',
-        importPath: '<%= yeoman.app %>/_bower_components',
+        importPath: '<%= yeoman.app %>/bower_components',
         relativeAssets: false,
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
         outputStyle: 'expanded'
-        //raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
+        //raw: 'extensions_dir = "<%= yeoman.app %>/bower_components"\n'
         // Allow using @import in the sass files.
       },
       dist: {
@@ -275,7 +275,7 @@ module.exports = function (grunt) {
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            '_bower_components/**'
+            'bower_components/**'
             //'favicon.ico',
             //'apple-touch*.png'
           ],
