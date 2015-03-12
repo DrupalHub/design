@@ -1,0 +1,34 @@
+---
+layout: default
+title: DrupalHub
+---
+
+<section class="container page-user">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li class="active">{{ site.data.user.name }}</li>
+  </ul>
+
+  <section class="user">
+    <div class="row">
+      <div class="col-md-4 about">
+        <div class="page-header user-header clearfix">
+          <h3>{{ site.data.user.name }} - {{ site.data.user.full_name }}</h3>
+        </div>
+        <img src="{{ site.data.user.image }}" class="images img-responsive profile" />
+        <div class="meta-info">
+          <i class="fa fa-users first"></i> {{ site.data.user.company }}
+          <i class="fa fa-star"></i> {{ site.data.user.reputation }}
+          <i class="fa fa-calendar"></i> {{ site.data.user.joined }}
+        </div>
+        {{ site.data.user.about }}
+      </div>
+
+      <div class="col-md-8 activity">
+        <div class="page-header user-header clearfix">
+          <h3>Activity stream</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

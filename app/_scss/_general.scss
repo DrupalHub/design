@@ -68,6 +68,10 @@
   &.comments {
     border: solid 1px $comment-image-border;
   }
+
+  &.profile {
+    border: solid 1px $profile-image-border;
+  }
 }
 
 a {
