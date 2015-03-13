@@ -1,5 +1,7 @@
 - bower:
   - angular/angular.js
+  - jquery/dist/jquery.min.js
 
 - drupalhub:
   - main.js
+  - jquery.gmap.min.js

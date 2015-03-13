@@ -2,6 +2,8 @@
 layout: default
 title: DrupalHub
 ---
+<script src="js/jquery.gmap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 <section class="container page-event">
 
@@ -24,7 +26,35 @@ title: DrupalHub
 
       <div class="col-md-4 col-sm-4">
         <ul class="data">
-          <li><i class="fa fa-map-marker"></i> {{site.data.event.address}}</li>
+          <li>
+            <div class="map-wrap">
+              <div class="">
+                <div id="maps" class="google-maps">
+                  <script>
+                    jQuery('#maps').gMap({
+                      address: "{{site.data.event.google_address}}",
+                      zoom: 16,
+                      controls: {
+                        panControl: true,
+                        zoomControl: true,
+                        mapTypeControl: true,
+                        scaleControl: true,
+                        streetViewControl: true,
+                        overviewMapControl: true
+                      },
+                      markers: [{
+                        latitude: "{{site.data.event.latitude}}",
+                        longitude: "{{site.data.event.longitude}}",
+                        html: "<h4>{{ site.data.event.title }}</h4>",
+                        popup: true
+                      }]
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><i class="fa fa-map-marker"></i> {{site.data.event.human_address}}</li>
           <li class="last"><i class="fa fa-clock-o"></i> {{site.data.event.date}}</li>
         </ul>
       </div>
