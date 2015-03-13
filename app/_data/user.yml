@@ -3,6 +3,7 @@ image: img/ClarkKent.jpg
 full_name: Clark Kent
 company: Gizra
 reputation: 20
+viewed: 350
 joined: 1/1/2015
 about: "
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -19,58 +20,83 @@ number:
   comments: 120
 activity:
 
-  - image: img/ClarkKent.jpg
-    text: "fff"
-    name: ClarkKent
-
   - image: img/BruceWayne.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/NickFury.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/PeterParker.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/ScottSummers.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/TonyStark.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/wolverine.jpeg
-    text: "fff"
-    name: ClarkKent
+    user: "Roy Segall - <a href='user.html#uid-1'>@RoySegall</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/ClarkKent.jpg
-    text: "fff"
-    name: ClarkKent
-
-  - image: img/BruceWayne.jpg
-    text: "fff"
-    name: ClarkKent
+    user: "Clark Kent - <a href='user.html#uid-1'>@ClarkKent</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/NickFury.jpg
-    text: "fff"
-    name: ClarkKent
+    user: "Nick Fury - <a href='user.html#uid-1'>@NickFury</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/PeterParker.jpg
-    text: "fff"
-    name: ClarkKent
+    user: "Peter Parker - <a href='user.html#uid-1'>@PeterParker</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/ScottSummers.jpg
-    text: "fff"
-    name: ClarkKent
+    user: "Scott Summers - <a href='user.html#uid-1'>@ScottSummers</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/TonyStark.jpg
-    text: "fff"
-    name: ClarkKent
+    user: "Tony Stark - <a href='user.html#uid-1'>@TonyStark</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
 
   - image: img/wolverine.jpeg
-    text: "fff"
-    name: ClarkKent
+    user: "Logen - <a href='user.html#uid-1'>@wolverine</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/BruceWayne.jpg
+    user: "Roy Segall - <a href='user.html#uid-1'>@RoySegall</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/ClarkKent.jpg
+    user: "Clark Kent - <a href='user.html#uid-1'>@ClarkKent</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/NickFury.jpg
+    user: "Nick Fury - <a href='user.html#uid-1'>@NickFury</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/PeterParker.jpg
+    user: "Peter Parker - <a href='user.html#uid-1'>@PeterParker</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/ScottSummers.jpg
+    user: "Scott Summers - <a href='user.html#uid-1'>@ScottSummers</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/TonyStark.jpg
+    user: "Tony Stark - <a href='user.html#uid-1'>@TonyStark</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/wolverine.jpeg
+    user: "Logen - <a href='user.html#uid-1'>@wolverine</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/ClarkKent.jpg
+    user: "Clark Kent - <a href='user.html#uid-1'>@ClarkKent</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/NickFury.jpg
+    user: "Nick Fury - <a href='user.html#uid-1'>@NickFury</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/PeterParker.jpg
+    user: "Peter Parker - <a href='user.html#uid-1'>@PeterParker</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/ScottSummers.jpg
+    user: "Scott Summers - <a href='user.html#uid-1'>@ScottSummers</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/TonyStark.jpg
+    user: "Tony Stark - <a href='user.html#uid-1'>@TonyStark</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+
+  - image: img/wolverine.jpeg
+    user: "Logen - <a href='user.html#uid-1'>@wolverine</a>"
+    text: "Roy asked a question: <a href=''>How can i create node via code?</a>"
+

@@ -11,16 +11,17 @@ title: DrupalHub
   </ul>
 
   <section class="user">
+    <div class="page-header user-header clearfix">
+      <h3>{{ site.data.user.name }} - {{ site.data.user.full_name }}</h3>
+    </div>
     <div class="row">
 
-      <div class="page-header user-header clearfix">
-        <h3>{{ site.data.user.name }} - {{ site.data.user.full_name }}</h3>
-      </div>
       <div class="col-md-4 about">
         <img src="{{ site.data.user.image }}" class="images img-responsive profile" />
         <div class="meta-info">
           <i class="fa fa-users first"></i> {{ site.data.user.company }}
           <i class="fa fa-star"></i> {{ site.data.user.reputation }}
+          <i class="fa fa-eye"></i> {{ site.data.user.viewed }}
           <i class="fa fa-calendar"></i> {{ site.data.user.joined }}
           <i class="fa fa-question"></i> {{ site.data.user.number.questions }}
           <i class="fa fa-comments"></i> {{ site.data.user.number.comments }}
@@ -38,11 +39,14 @@ title: DrupalHub
               <img src="{{ activity.image }}" class="images img-responsive profile" />
             </div>
 
-            <div class="col-md-10">
-              asdasdsad
+            <div class="col-md-10 text">
+              {{activity.user}}
+              <div class="meta-info">
+                <i class="fa fa-calendar first"></i> 1/1/2010
+              </div>
+              {{activity.text}}
             </div>
           </div>
-
         {% endfor %}
       </div>
     </div>

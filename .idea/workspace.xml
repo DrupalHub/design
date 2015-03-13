@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c25be0-6a2b-400d-9415-1df17d3097f8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/PeterParker.jpg" afterPath="$PROJECT_DIR$/app/img/PeterParker.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_scss/_general.scss" afterPath="$PROJECT_DIR$/app/_scss/_general.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_scss/_user.scss" afterPath="$PROJECT_DIR$/app/_scss/_user.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_layouts/default.html" afterPath="$PROJECT_DIR$/app/_layouts/default.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user.html" afterPath="$PROJECT_DIR$/app/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/_data/user.yml" afterPath="$PROJECT_DIR$/app/_data/user.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DrupalHub2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,31 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="1008">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.652064" vertical-offset="0" max-vertical-offset="1187">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/_scss/_user.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="486">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/_data/user.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.97066015" vertical-offset="177" max-vertical-offset="1476">
-              <caret line="76" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1944">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,13 +74,13 @@
         <option value="$PROJECT_DIR$/app/calendar.html" />
         <option value="$PROJECT_DIR$/app/_data/js.yml" />
         <option value="$PROJECT_DIR$/app/question.html" />
-        <option value="$PROJECT_DIR$/app/_scss/_general.scss" />
         <option value="$PROJECT_DIR$/app/_scss/_variables.scss" />
         <option value="$PROJECT_DIR$/app/_scss/main.scss" />
         <option value="$PROJECT_DIR$/app/_layouts/default.html" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
-        <option value="$PROJECT_DIR$/app/user.html" />
+        <option value="$PROJECT_DIR$/app/_scss/_general.scss" />
         <option value="$PROJECT_DIR$/app/_scss/_user.scss" />
+        <option value="$PROJECT_DIR$/app/user.html" />
         <option value="$PROJECT_DIR$/app/_data/user.yml" />
       </list>
     </option>
@@ -757,6 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33278418" vertical-offset="2458" max-vertical-offset="4734">
           <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -802,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/_scss/_general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9241667" vertical-offset="187" max-vertical-offset="1908">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/_scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.345" vertical-offset="0" max-vertical-offset="1200">
@@ -850,6 +834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19914894" vertical-offset="0" max-vertical-offset="1926">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -887,24 +872,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/_scss/_user.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333" vertical-offset="0" max-vertical-offset="486">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.3146853" vertical-offset="0" max-vertical-offset="1144">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/user.html">
+    <entry file="file://$PROJECT_DIR$/app/_scss/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.33304197" vertical-offset="51" max-vertical-offset="1926">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/_data/user.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97066015" vertical-offset="177" max-vertical-offset="1476">
-          <caret line="76" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1944">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.652064" vertical-offset="0" max-vertical-offset="1187">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>
