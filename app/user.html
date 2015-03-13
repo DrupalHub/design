@@ -4,6 +4,7 @@ title: DrupalHub
 ---
 
 <section class="container page-user">
+
   <ul class="breadcrumb">
     <li><a href="index.html">Home</a></li>
     <li class="active">{{ site.data.user.name }}</li>
@@ -11,23 +12,38 @@ title: DrupalHub
 
   <section class="user">
     <div class="row">
+
+      <div class="page-header user-header clearfix">
+        <h3>{{ site.data.user.name }} - {{ site.data.user.full_name }}</h3>
+      </div>
       <div class="col-md-4 about">
-        <div class="page-header user-header clearfix">
-          <h3>{{ site.data.user.name }} - {{ site.data.user.full_name }}</h3>
-        </div>
         <img src="{{ site.data.user.image }}" class="images img-responsive profile" />
         <div class="meta-info">
           <i class="fa fa-users first"></i> {{ site.data.user.company }}
           <i class="fa fa-star"></i> {{ site.data.user.reputation }}
           <i class="fa fa-calendar"></i> {{ site.data.user.joined }}
+          <i class="fa fa-question"></i> {{ site.data.user.number.questions }}
+          <i class="fa fa-comments"></i> {{ site.data.user.number.comments }}
         </div>
-        {{ site.data.user.about }}
+
+        <p>
+          {{ site.data.user.about }}
+        </p>
       </div>
 
       <div class="col-md-8 activity">
-        <div class="page-header user-header clearfix">
-          <h3>Activity stream</h3>
-        </div>
+        {% for activity in site.data.user.activity %}
+          <div class="row">
+            <div class="col-md-2">
+              <img src="{{ activity.image }}" class="images img-responsive profile" />
+            </div>
+
+            <div class="col-md-10">
+              asdasdsad
+            </div>
+          </div>
+
+        {% endfor %}
       </div>
     </div>
   </section>

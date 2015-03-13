@@ -14,3 +14,63 @@ about: "
   passages, and more recently with desktop publishing software like Aldus
   PageMaker including versions of Lorem Ipsum.
 "
+number:
+  questions: 30
+  comments: 120
+activity:
+
+  - image: img/ClarkKent.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/BruceWayne.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/NickFury.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/PeterParker.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/ScottSummers.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/TonyStark.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/wolverine.jpeg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/ClarkKent.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/BruceWayne.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/NickFury.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/PeterParker.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/ScottSummers.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/TonyStark.jpg
+    text: "fff"
+    name: ClarkKent
+
+  - image: img/wolverine.jpeg
+    text: "fff"
+    name: ClarkKent
