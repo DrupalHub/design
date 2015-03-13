@@ -73,6 +73,10 @@
   &.profile {
     border: solid 1px $profile-image-border;
   }
+
+  &.event {
+    border: solid 1px $events-border;
+  }
 }
 
 a {

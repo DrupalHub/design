@@ -1,0 +1,30 @@
+.page-event {
+
+  .event {
+
+    .event-content {
+
+      h2 {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    .data {
+      background: #FAFAFA;
+      border: solid 1px $events-border;
+
+      li {
+        padding-bottom: 10px;
+
+        &.last {
+          padding-bottom: 0;
+        }
+
+        .fa {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
