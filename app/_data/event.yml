@@ -20,3 +20,21 @@ text: "
     into electronic typesetting, remaining essentially unchanged. It was
     popularised in the 1960s with the release of Letraset sheets containing
 "
+rsvp:
+  attendees:
+    - user: Bruce Wayne
+      image: img/BruceWayne.jpg
+    - user: Clark Kent
+      image: img/ClarkKent.jpg
+    - user: Nick Fury
+      image: img/NickFury.jpg
+  maybe:
+    - user: img/PeterParker.jpg
+      image: Peter parker
+    - user: Scott summers
+      image: img/ScottSummers.jpg
+  no:
+    - image: img/TonyStark.jpg
+      user: "Tony Stark - <a href='user.html#uid-1'>@TonyStark</a>"
+    - image: img/wolverine.jpeg
+      user: "Logen - <a href='user.html#uid-1'>@wolverine</a>"
