@@ -24,10 +24,10 @@ layout: default
   <div class="documentation-list">
     {% for documentation in site.data.documentations %}
     <div class="row">
-      <div class="col-md-1">
+      <div class="col-md-1 col-xs-3 col-sm-3">
         <img class="images blog img-responsive" src="{{ documentation.image }}" />
       </div>
-      <div class="col-md-11">
+      <div class="col-md-11 col-xs-9 col-sm-9">
         <a href="{{ documentation.url }}">{{ documentation.title }}</a>
         {% for tag in documentation.tags %}
         <span class="label label-info"><a href="{{ tag.url }}">{{ tag.title }}</a></span>

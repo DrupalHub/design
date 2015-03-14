@@ -44,8 +44,8 @@ layout: default
                 {% for user in site.data.event.rsvp.comming %}
                 <li>
                   <div class="row">
-                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
-                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-6 col-xs-6">{{user.name}}</div>
                   </div>
                 </li>
                 {% endfor %}
@@ -56,8 +56,8 @@ layout: default
                 {% for user in site.data.event.rsvp.maybe %}
                 <li>
                   <div class="row">
-                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
-                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-6 col-xs-6">{{user.name}}</div>
                   </div>
                 </li>
                 {% endfor %}
@@ -68,8 +68,8 @@ layout: default
                 {% for user in site.data.event.rsvp.not %}
                 <li>
                   <div class="row">
-                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
-                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-6 col-xs-6">{{user.name}}</div>
                   </div>
                 </li>
                 {% endfor %}
@@ -79,7 +79,7 @@ layout: default
 
         </div>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <ul class="data">
           <li class="first">
             <div class="map-wrap">
@@ -114,7 +114,7 @@ layout: default
         </ul>
       </div>
 
-      <div class="col-md-12 col-sm-12 comments">
+      <div class="col-sm-12 col-sm-12 col-md-12 comments">
         <div class="page-header"><h2>Comments</h2></div>
 
         {% include comments.html %}
