@@ -34,3 +34,15 @@
     background-color: #00acee;
   }
 }
+
+.form-event {
+
+  .event-header {
+    border-bottom-color: $events-border;
+  }
+
+  .input-group {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
