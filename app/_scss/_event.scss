@@ -13,16 +13,36 @@
     .data {
       background: #FAFAFA;
       border: solid 1px $events-border;
+      margin-top: 10px;
 
       li {
-        padding-bottom: 10px;
 
-        &.last {
-          padding-bottom: 0;
+        &.first {
+          padding-bottom: 5px;
         }
 
         .fa {
           margin-left: 5px;
+        }
+      }
+    }
+
+    .rsvp {
+
+      .tab-content {
+        max-height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      .tab-pane {
+
+        ul {
+          padding-top: 5px;
+
+          li {
+            padding-bottom: 10px;
+          }
         }
       }
     }

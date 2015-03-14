@@ -21,20 +21,20 @@ text: "
     popularised in the 1960s with the release of Letraset sheets containing
 "
 rsvp:
-  attendees:
-    - user: Bruce Wayne
+  comming:
+    - name: Bruce Wayne
       image: img/BruceWayne.jpg
-    - user: Clark Kent
+    - name: Clark Kent
       image: img/ClarkKent.jpg
-    - user: Nick Fury
+    - name: Nick Fury
       image: img/NickFury.jpg
   maybe:
-    - user: img/PeterParker.jpg
-      image: Peter parker
-    - user: Scott summers
+    - name: Peter parker
+      image: img/PeterParker.jpg
+    - name: Scott summers
       image: img/ScottSummers.jpg
-  no:
+  not:
     - image: img/TonyStark.jpg
-      user: "Tony Stark - <a href='user.html#uid-1'>@TonyStark</a>"
+      name: Tony Stark
     - image: img/wolverine.jpeg
-      user: "Logen - <a href='user.html#uid-1'>@wolverine</a>"
+      name: Logen

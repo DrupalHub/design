@@ -1,6 +1,7 @@
 - bower:
   - angular/angular.js
   - jquery/dist/jquery.min.js
+  - bootstrap/dist/js/bootstrap.min.js
 
 - drupalhub:
   - main.js

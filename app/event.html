@@ -15,18 +15,74 @@ title: DrupalHub
 
   <section class="event">
     <div class="row">
-      <div class="col-md-3 col-sm-3 pull-left image">
-        <img class="images event img-responsive" src="{{ site.data.event.image }}" />
-      </div>
-      <div class="col-md-5 col-sm-5 event-content">
+      <div class="col-md-8 col-sm-8 event-content">
         <h2>{{ site.data.event.title }}</h2>
 
         {{ site.data.event.text }}
       </div>
 
       <div class="col-md-4 col-sm-4">
+        <div role="tabpanel" class="rsvp">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Coming</a></li>
+            <li role="presentation"><a href="#maybe" aria-controls="maybe" role="maybe" data-toggle="tab">Maybe</a></li>
+            <li role="presentation"><a href="#not" aria-controls="not" role="tab" data-toggle="tab">Not</a></li>
+            <li role="presentation" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">RSVP? <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                <li><a>Yes</a></li>
+                <li><a>Maybe</a></li>
+                <li><a>No</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="coming">
+              <ul>
+                {% for user in site.data.event.rsvp.comming %}
+                <li>
+                  <div class="row">
+                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="maybe">
+              <ul>
+                {% for user in site.data.event.rsvp.maybe %}
+                <li>
+                  <div class="row">
+                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="not">
+              <ul>
+                {% for user in site.data.event.rsvp.not %}
+                <li>
+                  <div class="row">
+                    <div class="col-md-3 col-sm-1"><img class="images event img-responsive" src="{{user.image}}" /></div>
+                    <div class="col-md-9 col-sm-11">{{user.name}}</div>
+                  </div>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-12">
         <ul class="data">
-          <li>
+          <li class="first">
             <div class="map-wrap">
               <div class="">
                 <div id="maps" class="google-maps">
