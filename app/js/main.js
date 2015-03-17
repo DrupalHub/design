@@ -1,4 +1,4 @@
-var DrupalHub = angular.module('DrupalHub', ['DrupalHubConfig']);
+var DrupalHub = angular.module('DrupalHub', ['DrupalHubConfig', 'ngRoute']);
 
 // Since we using jekyll we can't use {{}} as interpreter.
 DrupalHub.config(function($interpolateProvider) {
@@ -10,11 +10,10 @@ DrupalHub.config(function($interpolateProvider) {
 DrupalHub.controller('headerCtrl', function($scope, $http, SERVER) {
   $scope.userName = 'Login/Sign in';
   $scope.userLink = 'register-signin.html';
-  //
-  //var response = $http.get(SERVER + 'session/token');
-  //
-  //response.success(function() {
-  //});
 });
 
-
+DrupalHub.filter('rawHtml', ['$sce', function($sce){
+  return function(val) {
+    return $sce.trustAsHtml(val);
+  };
+}]);

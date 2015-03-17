@@ -2,10 +2,12 @@
   - angular/angular.js
   - jquery/dist/jquery.min.js
   - bootstrap/dist/js/bootstrap.min.js
+  - angular-route/angular-route.min.js
 
 - drupalhub:
   - config.js
   - encoding.js
   - main.js
   - login-signup.js
+  - question.js
   - jquery.gmap.min.js
