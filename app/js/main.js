@@ -1,4 +1,4 @@
-var DrupalHub = angular.module('DrupalHub', []);
+var DrupalHub = angular.module('DrupalHub', ['DrupalHubConfig']);
 
 // Since we using jekyll we can't use {{}} as interpreter.
 DrupalHub.config(function($interpolateProvider) {
@@ -6,3 +6,7 @@ DrupalHub.config(function($interpolateProvider) {
   $interpolateProvider.endSymbol('} }');
 });
 
+// Controller for the title.
+DrupalHub.controller('wrapper', function($scope, SERVER) {
+  $scope.foo = SERVER;
+});

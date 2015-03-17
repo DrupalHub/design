@@ -4,5 +4,6 @@
   - bootstrap/dist/js/bootstrap.min.js
 
 - drupalhub:
+  - config.js
   - main.js
   - jquery.gmap.min.js
