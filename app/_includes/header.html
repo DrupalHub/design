@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="headerCtrl">
   <div class="container">
     <div class="navbar-header ">
       <img src="img/logo.png" />
@@ -35,7 +35,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="fa fa-user" href="register-signin.html">Sign in/up</a>
+          <a class="fa fa-user" href="{ {userLink} }" ng-cloak>{ {userName} }</a>
         </li>
       </ul>
     </div>

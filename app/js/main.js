@@ -6,7 +6,15 @@ DrupalHub.config(function($interpolateProvider) {
   $interpolateProvider.endSymbol('} }');
 });
 
-// Controller for the title.
-DrupalHub.controller('wrapper', function($scope, SERVER) {
-  $scope.foo = SERVER;
+// Controller that will wrap the entire application.
+DrupalHub.controller('headerCtrl', function($scope, $http, SERVER) {
+  $scope.userName = 'Login/Sign in';
+  $scope.userLink = 'register-signin.html';
+  //
+  //var response = $http.get(SERVER + 'session/token');
+  //
+  //response.success(function() {
+  //});
 });
+
+

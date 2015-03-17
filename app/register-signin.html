@@ -59,32 +59,32 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="col-lg-5 col-md-5">
+    <div class="col-lg-5 col-md-5" ng-controller="loginCtrl">
       <h2 class="section-title">Are you registered?</h2>
       <div class="panel panel-success">
         <div class="panel-heading">Login Form</div>
         <div class="panel-body">
-          <form role="form">
+          <form role="form" name="loginForm" ng-submit="user.login()" novalidate>
             <div class="form-group">
               <div class="input-group login-input">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Username" ng-model="user.name" required>
               </div>
+              <span ng-cloak class="text-danger" ng-show="nameError">{ {error.name} }<br /></span>
               <br>
               <div class="input-group login-input">
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" placeholder="Password" ng-model="user.pass" required>
               </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox">Remember me
-                </label>
-              </div>
-              <a href="#" class="social-icon soc-twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="social-icon soc-google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="social-icon soc-facebook"><i class="fa fa-facebook"></i></a>
+              <span ng-cloak class="text-danger" ng-show="passError">{ {error.pass} }<br /></span>
+              <!--<br />-->
+              <!--<a href="#" class="social-icon soc-twitter"><i class="fa fa-twitter"></i></a>-->
+              <!--<a href="#" class="social-icon soc-google-plus"><i class="fa fa-google-plus"></i></a>-->
+              <!--<a href="#" class="social-icon soc-facebook"><i class="fa fa-facebook"></i></a>-->
+              <span ng-cloak class="text-danger" ng-show="showLoginResultsFail"><Br />{ {loginResults} }</span>
+              <span ng-cloak class="text-success" ng-show="showLoginResultsSucess"><Br />{ {loginResults} }</span>
               <hr>
-              <button type="submit" class="btn btn-primary pull-right">Login</button>
+              <input type="submit" class="btn btn-primary pull-right" />
               <a href="#" class="btn btn-warning">Password Recovery</a>
               <div class="clearfix"></div>
             </div>

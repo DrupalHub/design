@@ -5,5 +5,7 @@
 
 - drupalhub:
   - config.js
+  - encoding.js
   - main.js
+  - login-signup.js
   - jquery.gmap.min.js
